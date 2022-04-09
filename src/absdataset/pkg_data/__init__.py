@@ -6,8 +6,9 @@ except:
 
 __here = __os.path.abspath(__os.path.dirname(__file__))
 
-GGPLAY = __pd.read_csv(f"{__here}/googleplaystore.csv")
-HEARTDATA = __pd.read_csv(f"{__here}/heart_2020_cleaned.csv")
+GGPLAY = __pd.read_csv(__os.path.join(__here, "googleplaystore.csv"))
+HOTELDATA = __pd.read_csv(__os.path.join(__here, "hotel_bookings.csv"))
 
 
 # online data
+
